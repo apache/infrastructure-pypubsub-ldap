@@ -35,7 +35,7 @@ class SyncReplClient(ldap.ldapobject.ReconnectLDAPObject, ldap.syncrepl.Syncrepl
         self.sync_done = False
         self.changedb = {}
         self.__presentUUIDs = {}
-        self.pubsub_url = "https://pubsub.apache.org:2069/private/ldap"
+        self.pubsub_url = "https://pubsub.apache.org:2070/private/ldap"
 
         ldap.ldapobject.ReconnectLDAPObject.__init__(self, *args, **kwargs)
 
